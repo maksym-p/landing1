@@ -72,10 +72,8 @@ html, body {
 .banner ul.btn {
 	max-width: 290px;
 	margin: 24px auto 0;
-	padding: 10px;
 	text-align: center;
 	list-style: none;
-	border: 2px solid #505050;
 	font-size: 0;
 }
 
@@ -97,17 +95,31 @@ html, body {
 	color: #fff;
 	text-decoration: none;
 	letter-spacing: 0.1em;
-	border-bottom: 2px solid #505050;
 	height: 1.5em;
 	line-height: 1.5em;
 }
 
-.banner .btn .btn-reg, .banner .btn .btn-lm {
-	min-width: 125px;
+.banner ul.btn .btn-si {
+	padding: 8px 8px 10px;
+	border-top: 2px solid #505050;
+	border-right: 2px solid #505050;
+	border-left: 2px solid #505050;
+}
+
+.banner ul.btn .btn-reg, .banner ul.btn .btn-lm {
+	min-width: 123px;
 	padding: 5px 10px 3px;
 	background: #ADD8E6;
 	color: #505050;
 	border-bottom: 2px solid #505050;
+}
+
+.banner ul.btn .btn-reg {
+	border-left: 2px solid #505050;
+}
+
+.banner ul.btn .btn-lm {
+	border-right: 2px solid #505050;
 }
 
 .banner ul.btn a:hover {
@@ -115,7 +127,22 @@ html, body {
 	color: #505050;
 	font-weight: bold;
 	letter-spacing: 0.11em;
+}
+
+.banner ul.btn .btn-si:hover {
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+
+.banner ul.btn .btn-reg:hover {
 	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+}
+
+.banner ul.btn .btn-lm:hover {
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
 }
 
 .main-goods {
@@ -214,4 +241,50 @@ ul.features li:last-child {
 	padding: 8px 0;
 	width: 11em;
 	margin: 0 auto;
+}
+
+.page-footer {
+	min-height: 120px;
+	background: #505050;
+	position: relative;
+}
+
+.page-footer .social-container {
+	float: left;
+	height: 60px; /*70px*/
+	line-height: 60px; /*70px*/
+	position: absolute;
+}
+
+.page-footer .social {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: #3C29AA url("social.png") no-repeat 2% 12%;
+	vertical-align: middle;
+	margin-left: 30px;
+	border-radius: 10px;
+}
+
+.page-footer .social-fb {
+	background: #2D2A92 url("social.png") no-repeat 45% 0;
+}
+
+.page-footer .social-gp {
+	background: #E03131 url("social-challenge.png") no-repeat 105% 40%;
+}
+
+.page-footer .social:hover {
+	background-color: rgba(255,0,0,0.75);
+}
+
+.page-footer .copyright {
+	float: right;
+	width: 260px;
+	height: 60px; /*70px*/
+	line-height: 60px; /*70px*/
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 30px;
+	font-size: 12px;
 }
