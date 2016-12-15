@@ -1,0 +1,101 @@
+﻿main {
+	background: #efefef;
+	padding: 20px 10px;
+	min-height: 250px;
+}
+
+.clearfix:after {
+	content:"";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.photo-album {
+	text-align: center;
+	font-size: 0;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.photo-album .target {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	content: "";
+}
+
+.photo-album .positioner {
+	min-height: 60px;
+	line-height: 60px;
+	background: #efefef;
+}
+
+.photo-album .label {
+	display: inline-block;
+	width: 58px;
+	height: 40px;
+	background: #fff;
+	padding: 5px;
+	margin: 0 -1px -1px 0; 
+	border: 1px solid #aaa;
+	vertical-align: bottom;
+}
+
+.photo-album .label img {
+	max-width: 100%;
+}
+
+.photo-album .label, .photo-album .photo {
+	font-size: 16px;
+}
+
+.photo-album .photo {
+	padding: 10px 10px 5px;
+	display: none;
+	border: 1px solid #aaa;
+	background: #fff;
+}
+
+.photo img {
+	max-width: 100%;
+	border: 1px solid #505050;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#target6:not(:target) ~ #target5:not(:target) ~ #target4:not(:target) ~ #target3:not(:target) ~ #target2:not(:target) ~ .photo1,
+.photo-album #target2:target ~ .photo2, 
+.photo-album #target3:target ~ .photo3, 
+.photo-album #target4:target ~ .photo4, 
+.photo-album #target5:target ~ .photo5, 
+.photo-album #target6:target ~ .photo6 {
+	display: block;
+}
+
+#target6:not(:target) ~ #target5:not(:target) ~ #target4:not(:target) ~ #target3:not(:target) ~ #target2:not(:target) ~ .label1:after,
+.photo-album #target2:target ~ .label2:after,
+.photo-album #target3:target ~ .label3:after,
+.photo-album #target4:target ~ .label4:after,
+.photo-album #target5:target ~ .label5:after,
+.photo-album #target6:target ~ .label6:after {
+	position: absolute;
+	content: "";
+	margin: 11px 0 0 -5px;
+	width: 73px;
+	height: 1px;
+	display: block;
+	background: #fff;
+}
+
+#target6:not(:target) ~ #target5:not(:target) ~ #target4:not(:target) ~ #target3:not(:target) ~ #target2:not(:target) ~ .label1,
+.photo-album #target2:target ~ .label2,
+.photo-album #target3:target ~ .label3,
+.photo-album #target4:target ~ .label4,
+.photo-album #target5:target ~ .label5,
+.photo-album #target6:target ~ .label6 {
+	width: 63px;
+	height: 45px;
+}
