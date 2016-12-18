@@ -6,8 +6,8 @@
 			<meta name="description" content="This is my first landing page. Welcome!">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 			<title>My Blog</title>
-			<link href="style-landing.css" rel="stylesheet">
-			<link href="style-blog.css" rel="stylesheet">
+			<link href="style/style-main.css" rel="stylesheet">
+			<link href="style/style-blog.css" rel="stylesheet">
 		</head>
 		<body>
 			<header class="page-header">
@@ -26,7 +26,9 @@
 				</hgroup>
 				<p>Nothing is true, everything is permitted.</p>
 			</section>
+			
 			<main>
+				<!--BLOG START-->
 				<section class="content">
 					<div class="blog-content col-7">
 						<article class="blog-post">
@@ -34,13 +36,12 @@
 								<h2><a href="#">Title 1</a></h2>
 							</hgroup>
 							<ul class="post-features">
-								<li>Time</li>
-								<li>Author</li>
-								<li>Comments</li>
-								<li>Category</li>
-								<li>Tag</li>
+								<li><div class="post-features-image"></div>December, 17</li>
+								<li><div class="post-features-image"></div>Jack Callman</li>
+								<li><div class="post-features-image"></div><a href="#">9 comments</a></li>
+								<li><div class="post-features-image"></div>Category: <a href="#">Politics</a></li>
 							</ul>
-							<img src="ig1.png">
+							<img src="image/infograph.png" alt="infograph.png">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<a class="rm-btn" href="#" title="Read more...">Read more...</a>
@@ -50,14 +51,13 @@
 								<h2><a href="#">Title 2</a></h2>
 							</hgroup>
 							<ul class="post-features">
-								<li>Time</li>
-								<li>Author</li>
-								<li>Comments</li>
-								<li>Category</li>
-								<li>Tag</li>
+								<li><div class="post-features-image"></div>December, 10</li>
+								<li><div class="post-features-image"></div>zNext</li>
+								<li><div class="post-features-image"></div><a href="#">23 comments</a></li>
+								<li><div class="post-features-image"></div>Category: <a href="#">Economics</a></li>
 							</ul>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<img src="ig2.png">
+							<img src="image/jobs.png" alt="jobs.png">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<a class="rm-btn" href="#" title="Read more...">Read more...</a>
 						</article>
@@ -66,18 +66,22 @@
 								<h2><a href="#">Title 3</a></h2>
 							</hgroup>
 							<ul class="post-features">
-								<li>Time</li>
-								<li>Author</li>
-								<li>Comments</li>
-								<li>Category</li>
-								<li>Tag</li>
+								<li><div class="post-features-image"></div>November, 24</li>
+								<li><div class="post-features-image"></div>Sam Williams</li>
+								<li><div class="post-features-image"></div><a href="#">14 comments</a></li>
+								<li><div class="post-features-image"></div>Category: <a href="#">Jobs</a></li>
 							</ul>
-							<img id="img3" src="ig3.jpg">
+							<img id="img3" src="image/day-of-tw.jpg" alt="day-of-tw.jpg">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<a class="rm-btn" href="#" title="Read more...">Read more...</a>
 						</article>
 					</div>
+					<!--BLOG END-->
+					
+					<!--SIDEBAR START-->
+					
+					<!--CATEGORIES START-->
 					<aside class="sidebar col-3">
 						<div class="sb-row sb-cat">
 							<hgroup>
@@ -90,6 +94,9 @@
 								<li><a href="" title="Category: Sport">Sport</a></li>
 							</ul>
 						</div>
+						<!--CATEGORIES END-->
+						
+						<!--TWEETS START-->
 						<div class="sb-row sb-tw">
 							<hgroup>
 								<h3>Last Tweets</h3>
@@ -110,38 +117,46 @@
 								<div class="time">3 hours ago</div>
 							</div>
 						</div>
+						<!--TWEETS END-->
+						
+						<!--POSTS START-->
 						<div class="sb-row sb-rp">
 							<hgroup>
 								<h3>Recent Posts</h3>
 								<div class="post clearfix">
-									<div class="image"><img src="avatar1.jpg"></div>
+									<div class="image"><img src="image/avatar-sp.jpg" alt="avatar-sp.jpg"></div>
 									<div class="post-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
 										<div class="date">December 10, 2016</div>
 										<div class="comments">14 comments</div>
 									</div>
 								</div>
 								<div class="post clearfix">
-									<div class="image"><img src="ea.jpg"></div>
+									<div class="image"><img src="image/avatar-ea.jpg" alt="avatar-ea.jpg"></div>
 									<div class="post-content">
-										<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
 										<div class="date">December 7, 2016</div>
 										<div class="comments">9 comments</div>
 									</div>
 								</div>
 								<div class="post clearfix">
-									<div class="image"><img src="ec.jpg"></div>
+									<div class="image"><img src="image/avatar-ec.jpg" alt="avatar-ec.jpg"></div>
 									<div class="post-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
 										<div class="date">December 2, 2016</div>
 										<div class="comments">11 comments</div>
 									</div>
 								</div>
 							</hgroup>
 						</div>
+						<!--POSTS END-->
+						
 					</aside>
+					<!--SIDEBAR END-->
+					
 				</section>
 			</main>
+			
 			<footer class="page-footer">
 				<div class="social-container">
 					<a class="social social-fb" href="https://www.facebook.com/maksim.papenko" title="Facebook"></a>
@@ -150,5 +165,6 @@
 				</div>
 				<div class="copyright"><em>© Maksym Papenko. All rights reserved.</em></div>
 			</footer>
+			
 		</body>
 	</html>

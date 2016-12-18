@@ -1,0 +1,144 @@
+﻿.su-reg-main {
+	min-height: 430px;
+	background: #efefef;
+	padding: 80px 0 50px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.su-reg-form {
+	width: 502px;
+	background: #505050;
+	margin: 0 auto;
+}
+
+/*#su-li-btns-fix1, #su-li-btns-fix2 {
+	display: none;
+}*/
+
+.btns-fix {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.su-li-btns {
+	display: inline-block;
+	margin-right: -4px;
+	min-height: 50px;
+	line-height: 50px;
+	width: 250px;
+	text-align: center;
+	color: #fff;
+	border-bottom: 2px solid #efefef;
+	text-decoration: none;
+}
+
+.su-li-btns:hover {
+	cursor: pointer;
+	background: rgba(255,255,255,.3);
+	color: #ADD8E6;
+	border-bottom: 2px solid #ADD8E6;
+}
+
+.su-btn {
+	border-right: 2px solid #fff;
+}
+/*
+#su-li-btns-fix1:checked + label,
+#su-li-btns-fix2:checked + label {
+	border-bottom: 2px solid #fff;
+	background: #ADD8E6;
+	color: #505050;
+	font-weight: bold;
+}*/
+
+.form-content {
+	padding: 15px 20px 30px;
+	color: #fff;
+	font-size: 0.9em;
+	letter-spacing: 0.02em;
+}
+
+.su-reg-form p {
+	margin-bottom: 10px;
+	min-height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.07em;
+}
+
+input {
+	width: 100%;
+	margin: 5px 0 15px;
+	box-sizing: border-box;
+	padding: 5px;
+	height: 35px;
+	color: #fff;
+	font-size: 1.2em;
+	background: none;
+	letter-spacing: 0.02em;
+	border: 1px solid #fff;
+}
+
+input:focus {
+	border: 1px solid #ADD8E6;
+	outline: 0;
+}
+
+.form-content .req {
+	color: #FF4500;
+}
+
+.form-content .first-line-left {
+	float: left;
+	width: 48%;
+}
+
+.form-content .first-line-right {
+	float: right;
+	width: 48%;
+}
+
+.form-content button {
+	width: 50%;
+	text-transform: uppercase;
+	margin: 15px auto 0;
+	padding: 15px 0;
+	background: rgb(0,200,0);
+	border: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #fff;
+	display: block;
+	outline: 0;
+	cursor: pointer;
+}
+
+.form-content button:hover {
+	background: #32CD32;
+}
+
+.form-content {
+	display: none;	
+}
+
+/*#su-li-btns-fix1:checked ~ .su-form,
+#su-li-btns-fix2:checked ~ .li-form {
+	display: block;
+}*/
+
+#btns-fix2:not(:target) ~ .su-btn,
+#btns-fix2:target ~ .li-btn {
+	border-bottom: 2px solid #fff;
+	background: #ADD8E6;
+	color: #505050;
+	font-weight: bold;
+}
+
+#btns-fix2:not(:target) ~ .su-form,
+#btns-fix2:target ~ .li-form {
+	display: block;
+}

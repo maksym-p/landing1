@@ -6,8 +6,8 @@
 			<meta name="description" content="This is my first landing page. Welcome!">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 			<title>Contacts</title>
-			<link href="style-landing.css" rel="stylesheet">
-			<link href="style-contacts.css" rel="stylesheet">
+			<link href="style/style-main.css" rel="stylesheet">
+			<link href="style/style-contacts.css" rel="stylesheet">
 		</head>
 		<body>
 			<header class="page-header">
@@ -24,14 +24,31 @@
 				<hgroup>
 					<h1>My Contacts</h1>
 				</hgroup>
-				<article>
-					<ul class="contacts">
-						<li><div class="icon icon-tel"></div><b>tel.:</b> <i>+380-63-135-94-64</i></li>
-						<li><div class="icon icon-email"></div><b>e-mail:</b> <i>maksym.papenko@gmail.com</i></li>
-						<li><div class="icon"></div><b>Adress:</b> <i>Kyiv, Ukraine</i></li>
-					</ul>
-				</article>
+				<p>Have more questions? Contact us!</p>
 			</section>
+			
+			<article>
+				<ul class="contacts">
+					<li><div class="icon icon-tel"></div><b>tel.:</b> <i>+380-63-135-94-64</i></li>
+					<li><div class="icon icon-email"></div><b>e-mail:</b> <i>maksym.papenko@gmail.com</i></li>
+					<li><div class="icon"></div><b>Adress:</b> <i>Kyiv, Ukraine</i></li>
+				</ul>
+			</article>
+			
+			<article>
+				<form class="clearfix">
+					<div class="half left clearfix">
+						<input type="text" class="input-name" id="input-name" placeholder="Name">
+						<input type="email" class="input-email" id="input-email" placeholder="Email address">
+						<input type="text" class="input-subject" id="input-subject" placeholder="Subject">
+					</div>
+					<div class="half right clearfix">
+						<textarea name="message" type="text" class="input-message" id="input-message" placeholder="Message"></textarea>
+					</div>
+						<input type="submit" value="Submit" class="input-submit" id="input-submit">
+				</form>
+			</article>
+			
 			<footer class="page-footer">
 				<div class="social-container">
 					<a class="social social-fb" href="https://www.facebook.com/maksim.papenko" title="Facebook"></a>

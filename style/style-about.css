@@ -1,6 +1,6 @@
 ﻿main {
 	background: #efefef;
-	padding: 20px 10px;
+	padding: 20px 10px 30px;
 	min-height: 250px;
 }
 
@@ -26,21 +26,16 @@
 	content: "";
 }
 
-.photo-album .positioner {
-	min-height: 60px;
-	line-height: 60px;
-	background: #efefef;
-}
-
 .photo-album .label {
 	display: inline-block;
 	width: 58px;
-	height: 40px;
+	height: 35px;
 	background: #fff;
 	padding: 5px;
 	margin: 0 -1px -1px 0; 
 	border: 1px solid #aaa;
 	vertical-align: bottom;
+	opacity: 0.5;
 }
 
 .photo-album .label img {
@@ -83,7 +78,7 @@
 .photo-album #target6:target ~ .label6:after {
 	position: absolute;
 	content: "";
-	margin: 11px 0 0 -5px;
+	margin: 6px 0 0 -5px;
 	width: 73px;
 	height: 1px;
 	display: block;
@@ -97,5 +92,7 @@
 .photo-album #target5:target ~ .label5,
 .photo-album #target6:target ~ .label6 {
 	width: 63px;
-	height: 45px;
+	height: 40px;
+	opacity: 1;
+	border-top: 2px solid #ADD8E6;
 }

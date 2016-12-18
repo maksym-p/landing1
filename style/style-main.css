@@ -1,0 +1,115 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	font-family: "Lucida sans", "Helvetica";
+	font-size: 16px;
+}
+
+.page-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #505050;
+	z-index: 1000;
+}
+
+.page-header nav {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.main-menu {
+	list-style: none;
+	font-size: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.main-menu li a {
+	min-width: 8em;
+	display: block;
+	padding: 10px 0 8px;
+	text-align: center;
+	font-size: 0.9em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid #505050;
+}
+
+.main-menu li a:hover {
+	background: rgba(255,255,255,.4);
+	color: #ADD8E6;
+	border-bottom: 2px solid #fff;
+}
+
+.banner {
+	background: #ADD8E6;
+	width: 100%;
+	text-align: center;
+	padding: 135px 0 120px;
+	color: #444;
+}
+
+.banner h1 {
+	font-size: 2.6em;
+	margin: 0 auto 0.3em;
+	padding: 0 0 0.3em;
+	max-width: 75%;
+	border-bottom: 2px solid #505050;
+}
+
+.banner p {
+	font-size: 1.15em;
+}
+
+.page-footer {
+	min-height: 100px;
+	background: #505050;
+}
+
+.page-footer .social-container {
+	float: left;
+	height: 100px;
+	line-height: 100px;
+}
+
+.page-footer .social {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url("../image/social.jpg") no-repeat -276px 50%;
+	vertical-align: middle;
+	margin-left: 50px;
+}
+
+.page-footer .social-vk {
+	background: url("../image/social.jpg") no-repeat -145px 50%;
+}
+
+.page-footer .social-gp {
+	background: url("../image/social.jpg") no-repeat -13px 50%;
+}
+
+.page-footer .copyright {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	vertical-align: middle;
+	text-align: right;
+	font-size: 0.72em;
+	color: #fff;
+	margin-right: 50px;
+}
+
+.clearfix:after {
+	content:"";
+	display: block;
+	height: 0;
+	clear: both;
+}
