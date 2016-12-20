@@ -150,6 +150,8 @@
 	width: 7.5em;
 	border-bottom: 2px solid rgb(0,200,0);
 	border-top: 2px solid rgb(0,200,0);
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .goods-list .features {

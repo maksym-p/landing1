@@ -34,7 +34,7 @@
 
 form {
 	margin: 0 auto;
-	max-width: 50%;
+	max-width: 60%;
 }
 
 .half {
@@ -43,8 +43,8 @@ form {
 }
 
 .right {
-	margin-left: 2%;
-	width: 50%;
+	margin-left: 4%;
+	width: 48%;
 }
 
 .half input, .half textarea {
@@ -77,8 +77,33 @@ textarea {
 
 #input-submit:hover {
 	background: #32CD32;
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 footer {
 	margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+	form {
+		max-width: 75%;
+	}
+	.half {
+		
+		width: 98%;
+	}
+	.right {
+		margin: 0;
+		width: 98%;
+	}
+}
+	
+@media screen and (max-width: 480px) {
+	form {
+		max-width: 90%;
+	}
+	.contacts {
+		max-width: 70%;
+	}
 }

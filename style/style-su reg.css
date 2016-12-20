@@ -37,12 +37,23 @@
 .su-li-btns:hover {
 	cursor: pointer;
 	background: rgba(255,255,255,.3);
-	color: #ADD8E6;
+	color: #505050;
+	font-weight: bold;
 	border-bottom: 2px solid #ADD8E6;
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.su-li-btns:active {
+	cursor: pointer;
+	background: #ADD8E6;
+	border-bottom: 2px solid #ADD8E6;
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .su-btn {
-	border-right: 2px solid #fff;
+	border-right: 2px solid #efefef;
 }
 /*
 #su-li-btns-fix1:checked + label,
@@ -119,6 +130,14 @@ input:focus {
 
 .form-content button:hover {
 	background: #32CD32;
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.form-content button:active {
+	background: rgb(0,240,0);
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .form-content {
@@ -141,4 +160,25 @@ input:focus {
 #btns-fix2:not(:target) ~ .su-form,
 #btns-fix2:target ~ .li-form {
 	display: block;
+}
+
+@media screen and (max-width: 520px) {
+	.su-reg-form {
+		width: 95%;
+		background: #505050;
+		margin: 0 auto;
+	}
+	.su-li-btns {
+		display: block;
+		margin-right: 0;
+		width: 100%;
+	}
+	.form-content .first-line-left {
+		float: none;
+		width: auto;
+	}
+	.form-content .first-line-right {
+		float: none;
+		width: auto;
+	}
 }

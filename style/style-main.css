@@ -16,6 +16,19 @@ html, body {
 	z-index: 1000;
 }
 
+.page-header i {
+	font-size: 2em;
+	color: #eee;
+	position: absolute;
+	left: 0.2em;
+	top: 0.07em;
+	visibility: hidden;
+}
+
+.page-header input {
+	display: none;
+}
+
 .page-header nav {
 	vertical-align: middle;
 	text-align: center;
@@ -46,6 +59,8 @@ html, body {
 	background: rgba(255,255,255,.4);
 	color: #ADD8E6;
 	border-bottom: 2px solid #fff;
+	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .banner {
@@ -69,11 +84,35 @@ html, body {
 }
 
 .page-footer {
-	min-height: 100px;
+	height: 60px;
 	background: #505050;
 }
 
 .page-footer .social-container {
+	margin-left: 30px;
+	height: 100%;
+	line-height: 60px;
+}
+
+.page-footer .social-container a {
+	font-size: 1em;
+	color: #fff;
+	margin-right: 30px;
+}
+
+.page-footer .social-container a:nth-of-type(1):hover {
+	color: #2222FF;
+}
+
+.page-footer .social-container a:nth-of-type(2):hover {
+	color: #5555FF;
+}
+
+.page-footer .social-container a:nth-of-type(3):hover {
+	color: #FF2222;
+}
+
+/*.page-footer .social-container {
 	float: left;
 	height: 100px;
 	line-height: 100px;
@@ -105,11 +144,53 @@ html, body {
 	font-size: 0.72em;
 	color: #fff;
 	margin-right: 50px;
-}
+}*/
 
 .clearfix:after {
 	content:"";
 	display: block;
 	height: 0;
 	clear: both;
+}
+
+@font-face {
+	font-family: Fontawesome; /* Гарнитура шрифта */
+	src: url(fonts/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */
+  }
+
+@media screen and (max-width: 480px) {
+	.page-header {
+		height: 37px;
+	}
+	.page-header i {
+		visibility: visible;
+	}
+	.page-header .main-menu {
+		position: fixed;
+		height: 100%;
+		width: 60%;
+		left: -62%;
+		top: 37px;
+		background: #505050;
+		-webkit-transition: all 250ms ease-in-out;
+        transition: all 250ms ease-in-out;
+		box-shadow: 2px 2px 5px black;
+	}
+	.page-header .main-menu li {
+		display: block;
+	}
+	.page-header .main-menu li a {
+		height: 3em;
+		line-height: 3em;
+		border-bottom: 0;
+		border-right: 2px solid #505050;
+		border-left: 2px solid #505050;
+	}
+	.page-header .main-menu li a:hover {
+		border-right: 2px solid #fff;
+		border-left: 2px solid #fff;
+	}
+	.page-header input:checked + .main-menu {
+		left: 0;
+	}
 }
